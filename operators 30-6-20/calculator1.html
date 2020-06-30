@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="a1" placeholder="First value">
+	<input type="text" id="a2" placeholder="Second Value">
+	<input type="text" id="a3" placeholder="answer">
+	<input type="button" value="+" onclick="plus()">
+	<input type="button" value="-" onclick="minus()">
+	<input type="button" value="*" onclick="mul()">
+	<input type="button" value="/" onclick="divide()">
+	<input type="button" value="c" onclick="ccc()">
+	<script>
+	function mul()
+	{
+	a=Number(document.getElementById("a1").value);
+	b=Number(document.getElementById("a2").value);
+	c=a*b;
+	document.getElementById("a3").value=c;
+	}
+		function plus()
+	{
+	a=Number(document.getElementById("a1").value);
+	b=Number(document.getElementById("a2").value);
+	c=a+b;
+	document.getElementById("a3").value=c;
+	}
+		function minus()
+	{
+	a=Number(document.getElementById("a1").value);
+	b=Number(document.getElementById("a2").value);
+	c=a-b;
+	document.getElementById("a3").value=c;
+	}
+		function divide()
+	{
+	a=Number(document.getElementById("a1").value);
+	b=Number(document.getElementById("a2").value);
+	c=a/b;
+	document.getElementById("a3").value=c;
+	}
+	function ccc()
+	{
+	document.getElementById("a1").value="";
+	document.getElementById("a2").value="";
+	
+	document.getElementById("a3").value="";
+	}	
+	</script>
+
+</body>
+</html>
