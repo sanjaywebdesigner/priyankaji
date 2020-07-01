@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="s1"><br>
+	<input type="button" onclick="a1()" value="1">
+	<input type="button" onclick="a2()" value="2">
+	<input type="button" onclick="a3()" value="3">
+	<input type="button" onclick="a4()" value="4">
+	<input type="button" onclick="a5()" value="5"><br>
+	<input type="button" onclick="a6()" value="6">
+	<input type="button" onclick="a7()" value="7">
+	<input type="button" onclick="a8()" value="8">
+	<input type="button" onclick="a9()" value="9">
+	<input type="button" onclick="a0()" value="0"><br>
+	<input type="button" onclick="plus()" value="+">
+	<input type="button" onclick="minus()" value="-">
+	<input type="button" onclick="multi()" value="*">
+	<input type="button" onclick="devide()" value="/">
+	<input type="button" onclick="equalto()" value="=">
+	<input type="button" onclick="clearall()" value="c">
+	<script>
+	function a1()
+		{
+			document.getElementById("s1").value+="1";
+		}
+		function a2()
+		{
+			document.getElementById("s1").value+="2";
+		}
+		function a3()
+		{
+			document.getElementById("s1").value+="3";
+		}
+		function a4()
+		{
+			document.getElementById("s1").value+="4";
+		}
+		function a5()
+		{
+			document.getElementById("s1").value+="5";
+		}
+		function a6()
+		{
+			document.getElementById("s1").value+="6";
+		}
+		function a7()
+		{
+			document.getElementById("s1").value+="7";
+		}
+		function a8()
+		{
+			document.getElementById("s1").value+="8";
+		}
+		function a9()
+		{
+			document.getElementById("s1").value+="9";
+		}
+		function a0()
+		{
+			document.getElementById("s1").value+="0";
+		}
+		function plus()
+		{
+			document.getElementById("s1").value+="+";
+		}
+		function minus()
+		{
+			document.getElementById("s1").value+="-";
+		}
+		function multi()
+		{
+			document.getElementById("s1").value+="*";
+		}
+		function devide()
+		{
+			document.getElementById("s1").value+="/";
+		}
+		function equalto()
+		{
+			document.getElementById("s1").value=eval(document.getElementById("s1").value);
+		}
+		function clearall()
+		{
+			document.getElementById("s1").value="";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" placeholder="first value" id="first"><br>
+	<input type="text" placeholder="second value" id="second"><br>
+	<input type="text" placeholder="third value" id="third"><br>
+	<input type="button" value="ans" onclick="ss()"><br>
+	<p id="ans"></p>
+	<script>
+		function ss()
+		{
+	a=Number(document.getElementById("first").value);
+			b=Number(document.getElementById("second").value);
+			c=Number(document.getElementById("third").value);
+			if(a==b && a==c)
+				{
+					document.getElementById("ans").innerHTML="all are equal";
+				}
+			else if(!(a==b || a==c || b==c))
+				{
+					document.getElementById("ans").innerHTML="all are different";
+				}
+			else{
+				document.getElementById("ans").innerHTML="two are equal";
+			}
+		}
+	</script>
+</body>
+</html>

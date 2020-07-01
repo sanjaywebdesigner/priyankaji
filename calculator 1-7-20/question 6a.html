@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" placeholder="first value" id="first"><br>
+	
+	<input type="button" value="ans" onclick="ss()"><br>
+	<p id="ans"></p>
+	<script>
+		function ss()
+		{
+	a=Number(document.getElementById("first").value);
+			if(a>=0)
+				{
+				document.getElementById("ans").innerHTML="positive";	
+				}
+			else
+				{
+				document.getElementById("ans").innerHTML="negative";	
+				}
+		}
+	</script>
+</body>
+</html>
