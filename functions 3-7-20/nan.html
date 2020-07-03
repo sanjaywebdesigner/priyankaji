@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input type="text" id="a1"><br>
+<input type="text" id="a2"><br>
+	<input type="text" id="a3"><br>
+	<input type="text" id="a4"><br>
+<input type="text" id="a5"><br>
+	<input type="button" onclick="s1()">
+	<script>
+	function s1()
+		{
+			a=Number(document.getElementById("a1").value);
+			if(isNaN(a))
+				{
+				a=0;
+				}
+			
+			b=Number(document.getElementById("a2").value);
+			if(isNaN(b))
+				{
+				b=0;
+				}
+			c=Number(document.getElementById("a3").value);
+			if(isNaN(c))
+				{
+				c=0;
+				}
+			d=Number(document.getElementById("a4").value);
+			if(isNaN(d))
+				{
+				d=0;
+				}
+			e=a+b+c+d;
+			document.getElementById("a5").value=e;
+			
+			
+					
+				}
+		
+		
+		
+	
+	</script>
+</body>
+</html>
