@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="a1"><br>
+	<input type="button" onclick="s1()">
+	<p id="g1"></p>
+	<script>
+	function s1()
+		{
+			a=document.getElementById("a1").value;
+			
+			b=a.indexOf("@");
+			c=a.indexOf(".");
+			d=c-b;
+			e=a.length;
+			f=e-c;
+			if(b==-1)
+				{
+					document.getElementById("g1").innerHTML="please enter @";
+				}
+			else if(c==-1)
+				{
+					document.getElementById("g1").innerHTML="please enter .";
+				}
+			else if(d<5)
+				{
+				document.getElementById("g1").innerHTML="please enter minimum 4 character between @ and .";	
+				}
+			else if(!(f==4))
+				{
+				document.getElementById("g1").innerHTML="please enter exact 3 character after .";	
+				}
+			else if(b<3)
+				{
+				document.getElementById("g1").innerHTML="please enter minimum 3 character before @";	
+				}
+			else{
+				document.getElementById("g1").innerHTML="correct";
+			};
+		}
+	</script>
+</body>
+</html>
