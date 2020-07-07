@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="a1"><br>
+	<input type="button" onclick="ss()">
+	<p id="dd"></p>
+	<script>
+	function ss()
+		{
+			a=document.getElementById("a1").value;
+			b=a.indexOf(".");
+			c=a.lastIndexOf(".");
+			d=c-b;
+			e=b+1;
+			f=b+2;
+			e1=a.charAt(e);
+			f1=a.charAt(f);
+			if(!(e1=="c" && f1=="o"))
+				{
+				document.getElementById("dd").innerHTML="incorrect";
+				}
+			else{
+				document.getElementById("dd").innerHTML="correct";
+			}
+		}
+	</script>
+</body>
+</html>
