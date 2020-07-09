@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	
+	<input type="button" onclick="s1()"><br>
+	<p id="a3"></p>
+	<script>
+		function s1()
+		{
+			a=0;
+		document.getElementById("a3").innerHTML="";	
+			for(j=1;j<=10;j++)
+				{
+		for(i=1;i<=5;i++)
+	{document.getElementById("a3").innerHTML+=(a+i)+"&nbsp;&nbsp;&nbsp;&nbsp;";
+	}
+					document.getElementById("a3").innerHTML+="<br>";
+					a=a+5;
+				}
+		}
+		</script>
+</body>
+</html>
+<!--
+i=1  first condition starting value
+i<20 final condition last value
+i++ increment or decrement
+i++  single increment
+i--  single decrement
+i=i+2;
+i=i-2;
+
+-->
