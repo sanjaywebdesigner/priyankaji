@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var age=37;
+    var gender="male";
+    var city="nonmetro";
+    if((age>=25) && (age<=35) && (gender=="male") && (city=="metro"))
+    {
+        document.write("Premium is 6%");
+    }
+    else if((age>=25) && (age<=40) && (gender=="male") && (city=="nonmetro"))
+    {
+        document.write("Premium is 4%");
+    }
+    else if((age>=25) && (age<=42) && (gender=="female") && (city=="metro"))
+    {
+        document.write("Premium is 3%");
+    }
+    else if((age>=25) && (age<=45) && (gender=="female") && (city=="nonmetro"))
+    {
+        document.write("Premium is 2%");
+    }
+    else
+    {
+        document.write("Premium is not applicable");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var even=0;
+    var odd=0;
+    var a=1;
+    var b=100;
+    var c=a%2;
+    if(c==0){
+        for(i=a; i<=b;i= i+2){
+            document.write(i+"<br>");
+            even++;
+        }
+    }
+    else
+    {
+        for(i=a+1; i<=b; i=i+2){
+            document.write(i+"<br>");
+            even++;
+        }
+    }
+    document.write("all values are even"+"<br>");
+    if(c==0){
+        for(i=a+1; i<=b;i= i+2){
+            document.write(i+"<br>");
+            odd++;
+        }
+    }
+    else
+    {
+        for(i=a; i<=b; i=i+2){
+            document.write(i+"<br>");
+            odd++;
+        }
+    }
+    document.write("all values are odd"+"<br><br>");
+    document.write("even total values are"+even+"<br>");
+    document.write("odd total values are"+odd+"<br>");
+</script>
+</body>
+</html>
