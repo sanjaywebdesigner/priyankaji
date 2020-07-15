@@ -1,0 +1,38 @@
+
+<html>
+<head>
+
+</head>
+<body onload="getDate()">
+ <div class="col">
+
+    <form>
+    <input type="date" id="sanjay" >
+        </form>
+    </div>
+    <script>
+function getDate(){
+    var today = new Date();
+a=today.getFullYear();
+b=today.getMonth()+1;
+c=today.getDate();
+	e=a-2;
+if(b<10)
+{
+	b="0"+b;
+}
+if(c<10)
+{
+	c="0"+c;
+}
+d=a+"-"+b+"-"+c;
+   g=e+"-"+b+"-"+c; 
+document.getElementById("sanjay").max=d;
+ document.getElementById("sanjay").min=g;   
+
+}
+</script>
+    
+</body>
+
+</html>

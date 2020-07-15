@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+
+<input type="text" id="day2" placeholder="birthday"><br>
+<input type="text" id="month2" placeholder="birthmonth"><br>
+<input type="text" id="year2" placeholder="birthyear"><br>
+<input type="button" onClick="calc()" value="calculate"><br>
+<p id="cc"></p>
+<script>
+function calc()
+{var d=new Date();
+
+			var cday=d.getDate();
+			
+			var cmonth=d.getMonth()+1;
+
+			var cyear=d.getFullYear();
+			
+	
+bday=Number(document.getElementById("day2").value);
+bmonth=Number(document.getElementById("month2").value);
+byear=Number(document.getElementById("year2").value);
+tday=cday-bday;
+tmonth=cmonth-bmonth;
+tyear=cyear-byear;
+if(cday<bday)
+{
+	tmonth=tmonth-1;
+	if(byear%4==0)
+	{
+	if(bmonth==2)
+	{tday=tday+29;
+	}
+	else if(bmonth==4 || bmonth==6 || bmonth==9 || bmonth==11 )
+	{
+	tday=tday+30;
+	}
+	else
+	{tday=tday+31;
+	}
+	}
+	else
+	{
+	if(bmonth==2)
+	{tday=tday+28;
+	}
+	else if(bmonth==4 || bmonth==6 || bmonth==9 || bmonth==11 )
+	{
+	tday=tday+30;
+	}
+	else
+	{tday=tday+31;
+	}
+	}
+}
+if(tmonth<0)
+{tmonth=tmonth+12;
+tyear=tyear-1;
+}
+total=tyear+" years "+tmonth+" months "+tday+" days ";
+document.getElementById("cc").innerHTML=total;
+
+}
+</script>
+</body>
+</html>

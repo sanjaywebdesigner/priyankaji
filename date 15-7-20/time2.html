@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body onLoad="dd()">
+	
+	<p id="a2"></p>
+	<script>
+		function dd()
+		{
+			setInterval(ss,1000);
+		}
+		function ss()
+		{
+		aa1=10;
+		aa2=59;
+		aa3=60;
+		
+	a=new Date();
+		b=a.getHours();
+		c=a.getMinutes();
+		d=a.getSeconds();
+			b1=aa1-b;
+			b2=aa2-c;
+			b3=aa3-d;
+			document.getElementById("a2").innerHTML=b1+"-"+b2+"-"+b3;
+			
+		}
+	</script>
+</body>
+</html>
+<!--  2020-07-15 
+
+1 secod=1000 mili second
+60 second=60*1000 mili second-->
