@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		.a1{
+			width:1008px;
+			height:52px;
+		}
+		.a2{
+			width:250px;
+			height:50px;
+			border:1px solid black;
+			float:left;
+		}
+	</style>
+</head>
+
+<body>
+	<input type="text" id="ss" placeholder="salary">
+	<input type="button" onclick="aa()">
+	<script>
+		aa1=10;
+	function aa()
+		{
+			if(aa1==10)
+				{
+					
+			bb=document.createElement("div");
+			bb.classList.add("a1");
+			cc=document.createElement("div");
+			cc.classList.add("a2");
+			cc.innerHTML="salary";
+			dd=document.createElement("div");
+			dd.classList.add("a2");
+			dd.innerHTML="HRA";
+			ee=document.createElement("div");
+			ee.classList.add("a2");
+			ee.innerHTML="TA";
+			ff=document.createElement("div");
+			ff.classList.add("a2");
+			ff.innerHTML="Net Salary";
+			bb.appendChild(cc);
+			bb.appendChild(dd);
+			bb.appendChild(ee);
+			bb.appendChild(ff);
+			document.body.appendChild(bb);
+					
+					
+					
+					
+			a=document.getElementById("ss").value;
+			b=document.createElement("div");
+			b.classList.add("a1");
+			c=document.createElement("div");
+			c.classList.add("a2");
+			c.innerHTML=a;
+			d=document.createElement("div");
+			d.classList.add("a2");
+			d.innerHTML=a*.1;
+			e=document.createElement("div");
+			e.classList.add("a2");
+			e.innerHTML=a*.2;
+			f=document.createElement("div");
+			f.classList.add("a2");
+			f.innerHTML=a*1.3;
+			b.appendChild(c);
+			b.appendChild(d);
+			b.appendChild(e);
+			b.appendChild(f);
+			document.body.appendChild(b);
+					aa1=11;
+				}
+			else{
+				a=document.getElementById("ss").value;
+			b=document.createElement("div");
+			b.classList.add("a1");
+			c=document.createElement("div");
+			c.classList.add("a2");
+			c.innerHTML=a;
+			d=document.createElement("div");
+			d.classList.add("a2");
+			d.innerHTML=a*.1;
+			e=document.createElement("div");
+			e.classList.add("a2");
+			e.innerHTML=a*.2;
+			f=document.createElement("div");
+			f.classList.add("a2");
+			f.innerHTML=a*1.3;
+			b.appendChild(c);
+			b.appendChild(d);
+			b.appendChild(e);
+			b.appendChild(f);
+			document.body.appendChild(b);
+					
+			}
+		}
+	</script>
+</body>
+</html>
