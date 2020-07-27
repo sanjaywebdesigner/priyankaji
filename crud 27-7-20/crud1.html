@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		.a1{
+			width:1008px;
+			height:auto;
+		}
+		.a2{
+			width:250px;
+			height:50px;
+			border:1px solid black;
+			float:left;
+		}
+		p{
+			clear:both;
+			width;100%;
+			height:50px;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<input type="text" id="s1" placeholder="name"><br>
+	<input type="text" id="s2" placeholder="mobile"><br>
+	<input type="text" id="s3" placeholder="password"><br>
+	<input type="text" id="s4" placeholder="email"><br>
+	<input type="text" id="s5" placeholder="value to search"><br>
+		<input type="button" onclick="ss()" value="add">
+		<input type="button" onclick="ss1()" value="search">
+	<input type="button" onclick="ss2()" value="update">
+	<input type="button" onclick="ss3()" value="delete">
+<div class="a1"></div>
+	<p></p>
+	<img src="../../jquery september/des10a.jpg">
+		<script>
+		function ss()
+			
+			{
+				cc=document.querySelector(".a1");
+				a=document.getElementById("s1").value;
+				b=document.getElementById("s2").value;
+				c=document.getElementById("s3").value;
+				d=document.getElementById("s4").value;
+				
+			    aa1=document.createElement("div");
+				aa1.classList.add("a2");
+				aa1.innerHTML=a;
+			    aa2=document.createElement("div");
+				aa2.classList.add("a2");
+				aa2.innerHTML=b;
+				aa3=document.createElement("div");
+				aa3.classList.add("a2");
+				aa3.innerHTML=c;
+				aa4=document.createElement("div");
+				aa4.classList.add("a2");
+				aa4.innerHTML=d;
+				
+				cc.appendChild(aa1);
+				cc.appendChild(aa2);
+				cc.appendChild(aa3);
+				cc.appendChild(aa4);
+			}
+			function ss1()
+			
+			{
+				tt=0;
+				f=document.querySelector("p");
+				
+				e=document.getElementById("s5").value;
+				g=document.querySelectorAll(".a2");
+				h=g.length;
+				for(i=0;i<h;i++)
+					{
+					if(g[i].innerHTML==e)
+						{
+							tt=1;
+						}
+					}
+				if(tt==0)
+					{
+						f.innerHTML="value not found";
+					}
+				else{
+					f.innerHTML="value found";
+				}
+			    
+			}
+		
+		</script>
+</body>
+</html>
