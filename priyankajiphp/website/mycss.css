@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+.a1{
+	width:1024px;
+	height:100px;
+	background-color:grey;
+}
+.a4{
+	width:1024px;
+	height:200px;
+	background-color:black;
+	color:white;
+}
+.a3{
+	width:1024px;
+	height:auto;
+	
+}
+.aa1{
+	width:500px;
+	height:100px;
+	background-color:grey;
+	float:left;
+}
+.aa2{
+	width:524px;
+	height:100px;
+	background-color:grey;
+	float:left;
+}
+.a2{
+	width:1024px;
+	height:52px;
+	
+}
+.a2a{
+	width:254px;
+	height:50px;
+	border:1px solid black;
+	float:left;
+	background-color: yellow;
+}
